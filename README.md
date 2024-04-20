@@ -9,13 +9,13 @@ The scenario consists of two containers, one for a database and the other for ke
 ![Files Tree](./filestree.png)
 
 ### Executing program
-* Run the trafficlight.py file in the background
+* Run docker compose file
 ```
-/path/to/trafficlight.py
+docker-compose up -d
 ```  
-* Run this command to watch the changes in the internal pins
+* Take the hole scnenario down
 ```
-watch gpio readall
+docker-compose down
 ```
 ### Disclaimers
 * The names of the directories, files and texts in the demo video are in spanish
