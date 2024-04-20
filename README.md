@@ -1,4 +1,4 @@
-# Project Title
+# Docker_MySQL-Rsyslog
 MySQL and Rsyslog service deployed using Docker
 
 ## Description
