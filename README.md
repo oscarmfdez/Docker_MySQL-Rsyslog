@@ -1,4 +1,4 @@
-# Docker_MySQL-Rsyslog
+# Docker MySQL-Rsyslog
 MySQL and Rsyslog service deployed using Docker
 
 ## Description
