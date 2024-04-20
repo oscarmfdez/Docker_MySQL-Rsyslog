@@ -1,0 +1,5 @@
+//Aquestes comandes sql son per crear un usuari local de la base de dades
+//per a poder entrar amb credencials. L'usuari 'default' te tots els privilegis
+CREATE USER 'default'@'%' IDENTIFIED BY 'default';
+GRANT ALL PRIVILEGES ON *.* TO 'default'@'%';
+FLUSH PRIVILEGES;

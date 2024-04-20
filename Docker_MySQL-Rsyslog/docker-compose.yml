@@ -1,0 +1,40 @@
+---
+services:
+  rsyslog:
+    build:
+      context: ./compose/rsyslog
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - my_data:/var/log/
+    networks:
+      my_network:
+        ipv4_address: 172.20.10.10
+    ports:
+      - "127.0.0.1:514:514"
+    expose:
+      - 514
+  mysql:
+    build:
+      context: ./compose/mysql
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - my_data:/var/lib/mysql
+    networks:
+      my_network:
+        ipv4_address: 172.20.10.20
+    ports:
+      - "127.0.0.1:3306:3306"
+    expose:
+      - 514
+
+networks:
+  my_network:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.10.0/24
+        
+volumes:
+  my_data:
