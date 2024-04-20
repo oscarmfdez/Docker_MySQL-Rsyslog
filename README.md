@@ -5,9 +5,6 @@ MySQL and Rsyslog service deployed using Docker
 The scenario consists of two containers, one for a database and the other for keeping records. These are connected by a docker network type bridge and share a volume to gain permanence of both the records and the database.
 ![Scenario diagram](./scenario.png)
 
-## Files tree
-![Files Tree](./filestree.png)
-
 ### Executing program
 * Run docker compose file
 ```
