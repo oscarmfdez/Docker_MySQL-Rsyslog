@@ -6,7 +6,7 @@ The scenario consists of two containers, one for a database and the other for ke
 ![Scenario diagram](./scenario.png)
 
 ## Files tree
-
+![Files Tree](./filestree.png)
 
 ### Executing program
 * Run the trafficlight.py file in the background
