@@ -17,6 +17,16 @@ docker-compose up -d
 ```
 docker-compose down
 ```
-### Disclaimers
-* The names of the directories, files and texts in the demo video are in spanish
-* The program was run using a virtual enviroment, therefore the shebang in the trafficlight.py file is "#!/usr/bin/env"
+### Run MySQL container
+Use this command if you want only the MySQL container
+```
+docker build -t mysql .
+docker run -d -p 3306:3306 mysql
+```
+
+### Run Rsyslog container 
+Use this command if you want only the Rsyslog container
+```
+docker build -t rsys .
+docker run -d -p 514 rsys
+```
